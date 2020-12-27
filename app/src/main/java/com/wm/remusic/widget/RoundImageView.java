@@ -19,10 +19,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.net.Uri;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.animation.LinearInterpolator;
-import android.widget.ImageView;
 
 import com.wm.remusic.R;
 
@@ -32,7 +32,7 @@ import com.wm.remusic.R;
  *
  * @author Alan
  */
-public class RoundImageView extends ImageView {
+public class RoundImageView extends AppCompatImageView {
 
 
     private static final int DEFAULT_DURATION = 60 * 370;

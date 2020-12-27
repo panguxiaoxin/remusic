@@ -1,10 +1,10 @@
 package com.wm.remusic.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -13,7 +13,6 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.wm.remusic.R;
-import com.wm.remusic.activity.MainActivity;
 import com.wm.remusic.uitl.PermissionHelper;
 
 import net.youmi.android.AdManager;
@@ -26,7 +25,7 @@ import net.youmi.android.normal.spot.SpotManager;
  * <p>开屏窗口</p>
  * Edited by Alian Lee on 2016-11-25.
  */
-public class SplashActivity extends Activity {
+public class SplashActivity extends AppCompatActivity {
     private Context mContext;
 	private PermissionHelper mPermissionHelper;
 	private static String TAG = "SplashActivity";
@@ -85,9 +84,11 @@ public class SplashActivity extends Activity {
 	 */
 	private void runApp() {
 		//初始化SDK
-		AdManager.getInstance(mContext).init("9ca9f88752601ff9", "c91f620182e46bad", false, true);
-		//设置开屏
-		setupSplashAd();
+//		AdManager.getInstance(mContext).init("9ca9f88752601ff9", "c91f620182e46bad", false, true);
+////		//设置开屏
+////		setupSplashAd();
+
+		startActivity(new Intent(this,MainActivity.class));
 	}
 
 	/**

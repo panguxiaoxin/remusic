@@ -23,12 +23,12 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimatedStateListDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.CompoundButtonCompat;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.Nullable;
+import androidx.core.widget.CompoundButtonCompat;
+import androidx.appcompat.widget.AppCompatRadioButton;
 import android.util.AttributeSet;
-import android.widget.RadioButton;
 
 import com.bilibili.magicasakura.utils.ThemeUtils;
 import com.bilibili.magicasakura.utils.TintManager;
@@ -37,7 +37,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 16/1/19
  */
-public class TintRadioButton extends RadioButton implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
+public class TintRadioButton extends AppCompatRadioButton implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
         , AppCompatCompoundButtonHelper.CompoundButtonExtensible, AppCompatTextHelper.TextExtensible {
     private AppCompatTextHelper mTextHelper;
     private AppCompatBackgroundHelper mBackgroundHelper;

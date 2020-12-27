@@ -22,11 +22,11 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
-import android.widget.TextView;
 
 import com.bilibili.magicasakura.utils.InputConnectionImpl;
 import com.bilibili.magicasakura.utils.TintManager;
@@ -35,7 +35,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 15/9/14
  */
-public class TintTextView extends TextView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
+public class TintTextView extends AppCompatTextView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
         AppCompatCompoundDrawableHelper.CompoundDrawableExtensible, AppCompatTextHelper.TextExtensible {
     private AppCompatTextHelper mTextHelper;
     private AppCompatBackgroundHelper mBackgroundHelper;

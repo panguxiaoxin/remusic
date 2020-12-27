@@ -9,12 +9,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Environment;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
-import com.squareup.okhttp.OkHttpClient;
 import com.wm.remusic.R;
 import com.wm.remusic.activity.DownActivity;
 import com.wm.remusic.net.HttpUtil;

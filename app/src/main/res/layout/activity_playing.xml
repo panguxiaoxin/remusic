@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/login_bg_night" />
+        app:srcCompat="@drawable/login_bg_night" />
 
     <View
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +52,7 @@
                     android:layout_marginTop="60dp"
                     android:layout_centerHorizontal="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/play_disc_halo" />
+                    app:srcCompat="@drawable/play_disc_halo" />
 
                 <com.wm.remusic.widget.AlbumViewPager
                     android:id="@+id/view_pager"
@@ -77,7 +78,7 @@
                     android:layout_marginRight="100dp"
                     android:layout_marginTop="-16dp"
                     android:rotation="-30"
-                    android:src="@drawable/play_needle"
+                    app:srcCompat="@drawable/play_needle"
                     android:transformPivotX="15.1dp"
                     android:transformPivotY="15.1dp" />
             </RelativeLayout>
@@ -104,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/play_icn_speaker" />
+                    app:srcCompat="@drawable/play_icn_speaker" />
 
                 <SeekBar
                     android:id="@+id/volume_seek"
@@ -171,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_rdi_icn_love" />
+                    app:srcCompat="@drawable/play_rdi_icn_love" />
 
                 <ImageView
                     android:id="@+id/playing_down"
@@ -179,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_icn_dlded_dis" />
+                    app:srcCompat="@drawable/play_icn_dlded_dis" />
 
                 <ImageView
                     android:id="@+id/playing_cmt"
@@ -187,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_icn_cmt_number_dis" />
+                    app:srcCompat="@drawable/play_icn_cmt_number_dis" />
 
                 <ImageView
                     android:id="@+id/playing_more"
@@ -195,7 +196,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_icn_more" />
+                    app:srcCompat="@drawable/play_icn_more" />
             </LinearLayout>
 
             <LinearLayout
@@ -253,7 +254,7 @@
                     android:layout_height="3dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_icn_loop_prs" />
+                    app:srcCompat="@drawable/play_icn_loop_prs" />
 
                 <ImageView
                     android:id="@+id/playing_pre"
@@ -261,7 +262,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_btn_prev" />
+                    app:srcCompat="@drawable/play_btn_prev" />
 
                 <ImageView
                     android:id="@+id/playing_play"
@@ -269,7 +270,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_rdi_btn_play" />
+                    app:srcCompat="@drawable/play_rdi_btn_play" />
 
                 <ImageView
                     android:id="@+id/playing_next"
@@ -277,7 +278,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_btn_next" />
+                    app:srcCompat="@drawable/play_btn_next" />
 
                 <ImageView
                     android:id="@+id/playing_playlist"
@@ -285,7 +286,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:src="@drawable/play_icn_src_prs" />
+                    app:srcCompat="@drawable/play_icn_src_prs" />
 
             </LinearLayout>
         </LinearLayout>

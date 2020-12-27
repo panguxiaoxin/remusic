@@ -8,18 +8,13 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
-import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.wm.remusic.MediaAidlInterface;
-import com.wm.remusic.R;
-import com.wm.remusic.fragment.QuickControlsFragment;
 import com.wm.remusic.service.MediaService;
 import com.wm.remusic.service.MusicPlayer;
-import com.wm.remusic.uitl.IConstants;
 
 import java.lang.ref.WeakReference;
 

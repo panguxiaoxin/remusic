@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="android:actionOverflowButtonStyle">@style/MyOverflowStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowStyle</item>
         <!-- Customize your theme here. -->
         <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
         <item name="android:windowBackground">@null</item>
@@ -19,7 +19,7 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -85,7 +85,7 @@
         <!--是否半透明-->
         <item name="android:windowIsTranslucent">true</item>
         <!-- 无标题 -->
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
         <!-- 背景颜色   @android:color/transparent 透明-->
         <item name="android:windowBackground">@android:color/background_light</item>
         <!-- 模糊 -->
@@ -125,7 +125,7 @@
         <item name="android:windowAnimationStyle">@style/AnimBottom</item>
         <item name="android:windowIsTranslucent">true</item>
         <!--半透明-->
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
         <!--无标题-->
         <!--<item name="android:windowBackground">@android:color/transparent</item>&lt;!&ndash;背景透明&ndash;&gt;-->
         <item name="android:backgroundDimEnabled">true</item>
@@ -173,7 +173,7 @@
         <item name="selectableItemBackground">@drawable/toolbarItemBackground</item>
         <item name="titleTextAppearance">@style/ToolBar.Title</item>
         <item name="subtitleTextAppearance">@style/Toolbar.SubTitle</item>
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="ToolBar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">

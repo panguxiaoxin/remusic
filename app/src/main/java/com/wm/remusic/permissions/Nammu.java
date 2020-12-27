@@ -25,11 +25,11 @@
 package com.wm.remusic.permissions;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -68,14 +68,14 @@ public class Nammu {
     /**
      * Returns true if the Activity has access to given permissions.
      */
-    public static boolean hasPermission(Activity activity, String permission) {
+    public static boolean hasPermission(AppCompatActivity activity, String permission) {
         return activity.checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
     }
 
     /**
      * Returns true if the Activity has access to a all given permission.
      */
-    public static boolean hasPermission(Activity activity, String[] permissions) {
+    public static boolean hasPermission(AppCompatActivity activity, String[] permissions) {
         for (String permission : permissions) {
             if (activity.checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
                 return false;
@@ -88,15 +88,15 @@ public class Nammu {
      * If we override other methods, lets do it as well, and keep name same as it is already weird enough.
      * Returns true if we should show explanation why we need this permission.
      */
-    public static boolean shouldShowRequestPermissionRationale(Activity activity, String permissions) {
+    public static boolean shouldShowRequestPermissionRationale(AppCompatActivity activity, String permissions) {
         return activity.shouldShowRequestPermissionRationale(permissions);
     }
 
-    public static void askForPermission(Activity activity, String permission, PermissionCallback permissionCallback) {
+    public static void askForPermission(AppCompatActivity activity, String permission, PermissionCallback permissionCallback) {
         askForPermission(activity, new String[]{permission}, permissionCallback);
     }
 
-    public static void askForPermission(Activity activity, String[] permissions, PermissionCallback permissionCallback) {
+    public static void askForPermission(AppCompatActivity activity, String[] permissions, PermissionCallback permissionCallback) {
         if (permissionCallback == null) {
             return;
         }

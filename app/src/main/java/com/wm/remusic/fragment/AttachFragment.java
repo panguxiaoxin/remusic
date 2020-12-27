@@ -1,12 +1,9 @@
 package com.wm.remusic.fragment;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 
-import com.wm.remusic.activity.BaseActivity;
-import com.wm.remusic.activity.MusicStateListener;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by wm on 2016/3/17.

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="46dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="?android:attr/selectableItemBackground"
+    android:background="?attr/selectableItemBackground"
     android:orientation="horizontal">
 
     <com.bilibili.magicasakura.widgets.TintImageView
@@ -43,10 +43,10 @@
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:layout_gravity="center|clip_vertical"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="?attr/selectableItemBackground"
         android:focusable="false"
         android:gravity="end"
         android:paddingLeft="15dp"
         android:paddingRight="12dp"
-        android:src="@drawable/list_icn_mng" />
+        app:srcCompat="@drawable/list_icn_mng" />
 </RelativeLayout>

@@ -4,8 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Build;
 import android.os.Environment;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
 
 import com.bilibili.magicasakura.utils.ThemeUtils;
 import com.facebook.cache.disk.DiskCacheConfig;
@@ -133,8 +133,8 @@ public class MainApplication extends Application implements ThemeUtils.switchCol
     //捕获全局Exception 重启界面
     public void initCatchException() {
         //设置该CrashHandler为程序的默认处理器
-        UnceHandler catchExcep = new UnceHandler(this);
-        Thread.setDefaultUncaughtExceptionHandler(catchExcep);
+//        UnceHandler catchExcep = new UnceHandler(this);
+//        Thread.setDefaultUncaughtExceptionHandler(catchExcep);
     }
 
     @Override

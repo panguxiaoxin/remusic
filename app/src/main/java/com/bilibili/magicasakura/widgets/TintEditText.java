@@ -19,10 +19,10 @@ package com.bilibili.magicasakura.widgets;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
-import android.widget.EditText;
 
 import com.bilibili.magicasakura.utils.InputConnectionImpl;
 import com.bilibili.magicasakura.utils.TintManager;
@@ -31,7 +31,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 16/2/1
  */
-public class TintEditText extends EditText implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
+public class TintEditText extends AppCompatEditText implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
         AppCompatCompoundDrawableHelper.CompoundDrawableExtensible {
     private AppCompatBackgroundHelper mBackgroundHelper;
     private AppCompatCompoundDrawableHelper mCompoundDrawableHelper;

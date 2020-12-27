@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:paddingLeft="16dp"
@@ -22,5 +23,5 @@
         android:paddingRight="10dp"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:src="@drawable/list_icn_move" />
+        app:srcCompat="@drawable/list_icn_move" />
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package com.wm.remusic.activity;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -9,15 +8,14 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
-import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +25,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bilibili.magicasakura.widgets.TintImageView;
 import com.facebook.binaryresource.BinaryResource;
@@ -57,8 +54,6 @@ import com.wm.remusic.fragment.MoreFragment;
 import com.wm.remusic.fragment.NetMoreFragment;
 import com.wm.remusic.handler.HandlerUtil;
 import com.wm.remusic.info.MusicInfo;
-import com.wm.remusic.json.AlbumInfo;
-import com.wm.remusic.json.MusicDetailInfo;
 import com.wm.remusic.json.RadioInfo;
 import com.wm.remusic.net.BMA;
 import com.wm.remusic.net.HttpUtil;
@@ -445,9 +440,9 @@ public class RadioDetailActivity extends BaseActivity implements ObservableScrol
         final static int FIRST_ITEM = 0;
         final static int ITEM = 1;
         private ArrayList<MusicInfo> arraylist;
-        private Activity mContext;
+        private AppCompatActivity mContext;
 
-        public PlaylistDetailAdapter(Activity context, ArrayList<MusicInfo> mList) {
+        public PlaylistDetailAdapter(AppCompatActivity context, ArrayList<MusicInfo> mList) {
             this.arraylist = mList;
             this.mContext = context;
         }

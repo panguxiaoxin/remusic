@@ -1,15 +1,13 @@
 package com.wm.remusic.fragment;
 
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -24,7 +22,6 @@ import android.widget.TextView;
 import com.bilibili.magicasakura.widgets.TintImageView;
 import com.github.promeg.pinyinhelper.Pinyin;
 import com.wm.remusic.R;
-import com.wm.remusic.activity.AlbumsDetailActivity;
 import com.wm.remusic.activity.SelectActivity;
 import com.wm.remusic.handler.HandlerUtil;
 import com.wm.remusic.info.MusicInfo;

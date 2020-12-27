@@ -1,17 +1,17 @@
 package com.wm.remusic.activity;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.wm.remusic.R;
 
 /**
  * Created by wm on 2016/3/19.
  */
-public class LoadingActivity extends Activity {
+public class LoadingActivity extends AppCompatActivity {
 
     //延迟3秒
     private static final long SPLASH_DELAY_MILLIS = 1600;

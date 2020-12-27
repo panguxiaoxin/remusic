@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:paddingBottom="3dp"
     android:paddingTop="3dp"
-    android:background="?android:attr/selectableItemBackground"
+    android:background="?attr/selectableItemBackground"
     android:orientation="horizontal">
 
     <com.bilibili.magicasakura.widgets.TintImageView

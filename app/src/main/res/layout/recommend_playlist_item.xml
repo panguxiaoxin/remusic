@@ -14,7 +14,7 @@
         android:id="@+id/fra">
 
         <com.facebook.drawee.view.SimpleDraweeView
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="110dp"
             android:src="@mipmap/list_third"
             android:id="@+id/playlist_art"

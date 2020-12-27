@@ -1,6 +1,5 @@
 package com.wm.remusic.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,11 +8,11 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -462,9 +461,9 @@ public class RankPlaylistActivity extends BaseActivity implements ObservableScro
         final static int FIRST_ITEM = 0;
         final static int ITEM = 1;
         private ArrayList<MusicInfo> arraylist;
-        private Activity mContext;
+        private AppCompatActivity mContext;
 
-        public PlaylistDetailAdapter(Activity context, ArrayList<MusicInfo> mList) {
+        public PlaylistDetailAdapter(AppCompatActivity context, ArrayList<MusicInfo> mList) {
             this.arraylist = mList;
             this.mContext = context;
         }

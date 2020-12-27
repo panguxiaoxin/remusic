@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout"
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -73,7 +74,7 @@
             android:padding="7dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/press_selector"
-            android:src="@drawable/note_btn_next" />
+            app:srcCompat="@drawable/note_btn_next" />
 
         <ImageButton
             android:id="@+id/iv_stop"
@@ -84,7 +85,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginRight="5dp"
             android:background="@drawable/press_selector"
-            android:src="@drawable/notification_close" />
+            app:srcCompat="@drawable/notification_close" />
 
     </LinearLayout>
 

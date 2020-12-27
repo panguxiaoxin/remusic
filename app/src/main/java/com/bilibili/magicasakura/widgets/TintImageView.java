@@ -19,8 +19,8 @@ package com.bilibili.magicasakura.widgets;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 import com.bilibili.magicasakura.utils.TintManager;
 
@@ -28,7 +28,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 15/11/8
  */
-public class TintImageView extends ImageView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
+public class TintImageView extends AppCompatImageView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
         , AppCompatImageHelper.ImageExtensible {
     private AppCompatBackgroundHelper mBackgroundHelper;
     private AppCompatImageHelper mImageHelper;

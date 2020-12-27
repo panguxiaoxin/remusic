@@ -4,9 +4,9 @@
 
 package com.wm.remusic.widget;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.graphics.Color;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -27,9 +27,9 @@ public class SplashScreen {
 
     private Dialog splashDialog;
 
-    private Activity activity;
+    private AppCompatActivity activity;
 
-    public SplashScreen(Activity activity) {
+    public SplashScreen(AppCompatActivity activity) {
         this.activity = activity;
     }
 

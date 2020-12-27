@@ -8,15 +8,15 @@ import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import androidx.appcompat.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
-import android.widget.SeekBar;
 
 import com.wm.remusic.R;
 
 /**
  * Created by wm on 2016/12/29.
  */
-public class PlayerSeekBar extends SeekBar {
+public class PlayerSeekBar extends AppCompatSeekBar {
 
     private boolean drawLoading = false;
     private int degree = 0;

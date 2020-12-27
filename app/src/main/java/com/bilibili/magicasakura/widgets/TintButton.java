@@ -22,9 +22,9 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
+import androidx.appcompat.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 import com.bilibili.magicasakura.utils.TintManager;
 
@@ -32,7 +32,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 15/10/25
  */
-public class TintButton extends Button implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
+public class TintButton extends AppCompatButton implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible
         , AppCompatTextHelper.TextExtensible {
     private AppCompatTextHelper mTextHelper;
     private AppCompatBackgroundHelper mBackgroundHelper;

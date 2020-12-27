@@ -11,7 +11,7 @@
         android:layout_gravity="center"
         android:layout_height="260dp"
         android:layout_margin="1dp"
-        android:src="@drawable/play_disc" />
+        app:srcCompat="@drawable/play_disc" />
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/sdv"

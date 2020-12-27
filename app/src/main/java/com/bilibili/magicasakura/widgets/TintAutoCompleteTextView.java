@@ -19,8 +19,8 @@ package com.bilibili.magicasakura.widgets;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
 import android.util.AttributeSet;
-import android.widget.AutoCompleteTextView;
 
 import com.bilibili.magicasakura.utils.TintManager;
 
@@ -28,7 +28,7 @@ import com.bilibili.magicasakura.utils.TintManager;
  * @author xyczero617@gmail.com
  * @time 16/2/14
  */
-public class TintAutoCompleteTextView extends AutoCompleteTextView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
+public class TintAutoCompleteTextView extends AppCompatAutoCompleteTextView implements Tintable, AppCompatBackgroundHelper.BackgroundExtensible,
         AppCompatCompoundDrawableHelper.CompoundDrawableExtensible {
     private AppCompatBackgroundHelper mBackgroundHelper;
     private AppCompatCompoundDrawableHelper mCompoundDrawableHelper;

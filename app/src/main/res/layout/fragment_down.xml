@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -22,7 +23,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/music_btn_start"
+                app:srcCompat="@mipmap/music_btn_start"
                 android:layout_marginRight="6dp" />
 
             <TextView
@@ -47,7 +48,7 @@
                 android:layout_height="20dp"
                 android:scaleType="fitCenter"
                 android:layout_marginRight="6dp"
-                android:src="@mipmap/music_btn_pause" />
+                app:srcCompat="@mipmap/music_btn_pause" />
 
             <TextView
                 android:layout_gravity="center"
@@ -74,7 +75,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerview" />

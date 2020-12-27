@@ -1,15 +1,15 @@
 package com.wm.remusic.uitl;
 
 import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 /**
@@ -57,11 +57,11 @@ public class PermissionHelper {
 					WRITE_EXTERNAL_STORAGE_CODE)
 	};
 
-	private Activity mActivity;
+	private AppCompatActivity mActivity;
 
 	private OnApplyPermissionListener mOnApplyPermissionListener;
 
-	public PermissionHelper(Activity activity) {
+	public PermissionHelper(AppCompatActivity activity) {
 		mActivity = activity;
 	}
 

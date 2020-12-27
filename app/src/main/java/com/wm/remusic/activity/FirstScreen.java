@@ -4,9 +4,9 @@
 
 package com.wm.remusic.activity;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.graphics.Color;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -27,9 +27,9 @@ public class FirstScreen {
 
     private Dialog splashDialog;
 
-    private Activity activity;
+    private AppCompatActivity activity;
 
-    public FirstScreen(Activity activity) {
+    public FirstScreen(AppCompatActivity activity) {
         this.activity = activity;
     }
 

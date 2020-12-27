@@ -21,10 +21,10 @@ import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.DrawableRes;
-import android.support.v4.graphics.drawable.DrawableCompat;
+import androidx.annotation.DrawableRes;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.appcompat.widget.AppCompatCheckedTextView;
 import android.util.AttributeSet;
-import android.widget.CheckedTextView;
 
 import com.bilibili.magicasakura.utils.TintManager;
 import com.wm.remusic.R;
@@ -36,7 +36,7 @@ import com.wm.remusic.R;
  * special view for replacing view in preference , not recommend to use it in common
  * layout: select_dialog_singlechoice_xxx
  */
-public class TintCheckedTextView extends CheckedTextView implements Tintable {
+public class TintCheckedTextView extends AppCompatCheckedTextView implements Tintable {
     private static final int[] ATTRS = {
             android.R.attr.drawableLeft,
             R.attr.drawableLeftTint

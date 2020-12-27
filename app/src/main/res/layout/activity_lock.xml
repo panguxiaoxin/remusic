@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <com.facebook.drawee.view.SimpleDraweeView
@@ -71,25 +72,25 @@
             android:id="@+id/lock_control"
             android:orientation="horizontal">
             <ImageView
-                android:src="@drawable/lock_btn_prev"
+                app:srcCompat="@drawable/lock_btn_prev"
                 android:id="@+id/lock_music_pre"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
             <ImageView
-                android:src="@drawable/lock_btn_pause"
+                app:srcCompat="@drawable/lock_btn_pause"
                 android:id="@+id/lock_music_play"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
             <ImageView
-                android:src="@drawable/lock_btn_next"
+                app:srcCompat="@drawable/lock_btn_next"
                 android:id="@+id/lock_music_next"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
             <ImageView
-                android:src="@drawable/lock_btn_love"
+                app:srcCompat="@drawable/lock_btn_love"
                 android:id="@+id/lock_music_fav"
                 android:layout_weight="1"
                 android:layout_width="0dp"

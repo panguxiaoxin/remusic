@@ -7,11 +7,11 @@ import android.graphics.LinearGradient;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Shader;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.TextView;
 
-public class CustomTextView extends TextView {
+public class CustomTextView extends AppCompatTextView {
     
     private final static String TAG = CustomTextView.class.getSimpleName();
     private Paint paint1;
